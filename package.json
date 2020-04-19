@@ -1,0 +1,38 @@
+{
+  "name": "app-shells",
+  "version": "1.0.0",
+  "description": "Full stack reusable starter applications based on different technologies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hvpulok/app-shells.git"
+  },
+  "keywords": [],
+  "author": "Md Kamrul Hasan Pulok <hvpulok@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hvpulok/app-shells/issues"
+  },
+  "homepage": "https://github.com/hvpulok/app-shells#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "cz-conventional-changelog": "^3.1.0",
+    "git-cz": "^4.3.1",
+    "husky": "^4.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
