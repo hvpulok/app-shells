@@ -1,5 +1,5 @@
 [servers]
-hvserver1.vm1 ansible_port=2200 ansible_host=192.168.1.70 ansible_user=hvpulok
+hvserver1-vm1 ansible_port=2200 ansible_host=192.168.1.70 ansible_user=hvpulok
 gc-db-muminlife-1 ansible_host=35.237.231.201 ansible_user=hvpulok
 gc-db-muminlife-2 ansible_host=35.243.159.177 ansible_user=hvpulok
 doc-muminlife-db-1 ansible_host=142.93.118.183 ansible_user=hvpulok

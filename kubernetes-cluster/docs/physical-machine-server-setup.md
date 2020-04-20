@@ -67,3 +67,14 @@ sudo nano /etc/hosts
 - Edit VM instance
 - At the bottom click on SSH Keys and add the key
 - Save the changes
+
+## In VM servers, make sudoers password less - suitable for Ansible playbook
+Ref: https://code-maven.com/enable-ansible-passwordless-sudo
+
+```bash
+ssh foo@192.168.56.11   # ssh to the remote VM server
+sudo visudo
+# We need to edit the line "%sudo   ALL=(ALL:ALL) ALL" as below
+%sudo  ALL=(ALL:ALL) NOPASSWD: ALL
+logout
+```
