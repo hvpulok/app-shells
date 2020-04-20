@@ -1,5 +1,10 @@
 In Physical machine
 
+# Check external IP address
+```bash
+curl ifconfig.me
+```
+
 # Virtual Box VM Setup
 
 ## Install
@@ -32,3 +37,29 @@ VBoxManage startvm <vmName> --type headless
 # Power off VM
 VBoxManage controlvm <vmName> poweroff
 ```
+
+# SSH setup in server
+Ref: https://help.ubuntu.com/lts/serverguide/openssh-server.html
+
+## Useful cmds
+```bash
+ssh-keygen -t rsa
+ssh-copy-id username@remotehost
+
+# Login to remote host
+ssh username@remotehost
+
+# Login to remote host using port
+ssh -p <portnumber> username@remotehost
+```
+
+## Add host names and ip address mapper in clients for easy ssh
+
+```bash
+sudo nano /etc/hosts
+```
+
+## Add client ssh public key in **Google Cloud VM** instance
+- Edit VM instance
+- At the bottom click on SSH Keys and add the key
+- Save the changes
