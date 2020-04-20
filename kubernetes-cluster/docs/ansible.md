@@ -6,6 +6,9 @@ sudo apt-add-repository ppa:ansible/ansible
 sudo apt update
 sudo apt install ansible
 
+# For ssh timout error increase timeout from 10 to 30
+sudo gedit /etc/ansible/ansible.cfg
+
 # List hosts
 ansible-inventory --list -y
 ansible-inventory --list -y -i ./hosts # from local hosts file
