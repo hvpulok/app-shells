@@ -51,6 +51,10 @@ ssh username@remotehost
 
 # Login to remote host using port
 ssh -p <portnumber> username@remotehost
+
+# Disable password based login - ChallengeResponseAuthentication no
+sudo nano /etc/ssh/sshd_config
+sudo systemctl reload ssh
 ```
 
 ## Add host names and ip address mapper in clients for easy ssh
