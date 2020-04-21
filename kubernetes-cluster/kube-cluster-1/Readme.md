@@ -12,6 +12,7 @@ ansible-playbook -i hosts ./master.yml
 
 # Kube cmds
 ```bash
-ssh -p 2200 admin@hvserver1         # Login to master node
+# ssh -p 2200 admin@hvserver1         # Login to master node
+ssh admin@hvserver1-vm1
 kubectl get nodes                   # Get kube nodes
 ```

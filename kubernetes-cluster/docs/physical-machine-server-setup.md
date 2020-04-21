@@ -15,6 +15,13 @@ sudo add-apt-repository multiverse && sudo apt-get update
 sudo apt install virtualbox
 sudo apt install virtualbox-ext-pack
 ```
+
+## Set root password
+```bash
+# first login as normal user
+sudo passwd
+```
+
 ## Configure Network Mode and port forwarding
 Ref: https://www.howtogeek.com/122641/how-to-forward-ports-to-a-virtual-machine-and-use-it-as-a-server/
 ### Checklist:
