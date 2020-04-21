@@ -15,6 +15,14 @@ sudo add-apt-repository multiverse && sudo apt-get update
 sudo apt install virtualbox
 sudo apt install virtualbox-ext-pack
 ```
+## Configure Network Mode and port forwarding
+Ref: https://www.howtogeek.com/122641/how-to-forward-ports-to-a-virtual-machine-and-use-it-as-a-server/
+### Checklist:
+Remember that this is only part of the process of making the server software inside a virtual machine reachable. You’ll also need to ensure that:
+
+- The firewall software running inside your virtual machine isn’t blocking the connections. (You may need to allow the server program in the guest operating system’s firewall.)
+- The firewall software on your host computer isn’t blocking the connections. (This only applies to NAT mode with port forwarding – the host computer’s firewall doesn’t interfere in bridged networking mode.)
+- Your router is forwarding ports correctly – this is only necessary if you want to access the virtual machine from the Internet. (Consult our guide to forwarding ports on routers here.)
 
 ## Uninstall
 ```bash
